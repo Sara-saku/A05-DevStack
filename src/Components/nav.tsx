@@ -1,23 +1,23 @@
-import React from 'react';
+
 import logo from '../assets/logo-text.png';
 
 const Nav = () => {
     return (
-        <nav> 
-        <div>
+        <nav className="bg-white shadow-md p-4 flex justify-between items-center container mx-auto font-sans font-medium"> 
+        
             <img src={logo} alt="Logo" />
-            <ul>
+            <ul className="flex justify-center space-x-4">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Technologies</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <div>
-                <button>Sing In</button>
-                <button>Sign Up</button>
+            <div className="flex space-x-4">
+                <button>Sign In</button>
+                <button className="bg-pink-500 text-white px-4 py-2 rounded-full">Sign Up</button>
             </div>
-        </div>
+        
         </nav>
     );  
 };
