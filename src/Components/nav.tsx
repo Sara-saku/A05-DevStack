@@ -7,7 +7,7 @@ const Nav = () => {
         
             <img src={logo} alt="Logo" />
             <ul className="flex justify-center space-x-4">
-                <li><a href="#">Home</a></li>
+                <li className='text-pink-500'><a href="#">Home</a></li>
                 <li><a href="#">Technologies</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
