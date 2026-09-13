@@ -52,7 +52,7 @@ const TechnologyCard = ({
 
     <button
       onClick={() => onAdd(technology)}
-      disabled={isAdded}
+    
       className=" mt-3
           w-full
           rounded-md
@@ -68,6 +68,7 @@ const TechnologyCard = ({
     >
       {isAdded ? "✓ Added to Stack" : "Add to Stack"}
     </button>
+
 
   </div>
 );
