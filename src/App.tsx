@@ -1,6 +1,7 @@
 import Nav from './Components/nav'
 import Banner from './Components/banner'
 import TechnologySection from "./Components/TechnologySection";
+import Footer from './Components/Footer';
 function App() {
   
 
@@ -9,6 +10,7 @@ function App() {
      <Nav></Nav>
     <Banner></Banner>
     <TechnologySection />
+    <Footer />
     </>
   )
 }

@@ -1,15 +1,21 @@
-import { useState } from "react";
-import technologies from "../data/technologies.json";
+import { useEffect, useState } from "react";
+
 import type { Technology } from "../Types/technology";
 import TechnologyCard from "./TechnologyCard";
 import YourStack from "./YourStack";
 
 const TechnologySection = () => {
-  const technologyList: Technology[] = technologies;
-
+  const [technologyList, setTechnologyList] = useState<Technology[]>([]);
   const [selectedTechnologies, setSelectedTechnologies] = useState<
     Technology[]
   >([]);
+  useEffect(() => {
+  fetch("/technologies.json")
+    .then((response) => response.json())
+    .then((data: Technology[]) => {
+      setTechnologyList(data);
+    });
+}, []);
 
   const handleAdd = (technology: Technology) => {
     const alreadyAdded = selectedTechnologies.some(
@@ -41,7 +47,7 @@ const TechnologySection = () => {
 
   return (
     <section className="container mx-auto px-8 py-12">
-      <h2  className="text-4xl font-bold mb-6">Explore the <span className="text-pink-500">Technologies</span></h2>
+      <h2 className="text-4xl font-bold mb-6">Explore the <span className="text-pink-500">Technologies</span></h2>
       <p className="text-lg text-gray-600 mb-12">Pick one technology per category to build your ideal stack.</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
