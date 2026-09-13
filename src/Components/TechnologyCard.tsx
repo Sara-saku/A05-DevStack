@@ -34,7 +34,7 @@ const TechnologyCard = ({
       {technology.description}
     </p>
 
-    <div className="flex items-center justify-between gap-15 mt-4">
+    <div className="flex items-center justify-between mt-4">
       <span className="text-xs font-medium px-2 py-1 rounded-md bg-gray-100">
         {technology.category}
       </span>
