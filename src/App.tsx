@@ -1,6 +1,6 @@
 import Nav from './Components/nav'
 import Banner from './Components/banner'
-
+import TechnologySection from "./Components/TechnologySection";
 function App() {
   
 
@@ -8,7 +8,7 @@ function App() {
     <>
      <Nav></Nav>
     <Banner></Banner>
-
+    <TechnologySection />
     </>
   )
 }
