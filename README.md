@@ -11,6 +11,7 @@ and clear the entire stack. Technology information is loaded dynamically
 from a JSON file.
 
 Live Demo:
+https://exquisite-douhua-8a1479.netlify.app/
 
 My deployed project link here:
 
